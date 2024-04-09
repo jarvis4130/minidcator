@@ -83,7 +83,7 @@ const Checkout = () => {
       <div className="bg-white rounded-md shadow-md p-4">
         <div className="m-4 bg-white rounded-md shadow-md overflow-hidden w-64">
           <img
-            src={`./../../public/${carDetails.image}`}
+            src={carDetails.image}
             alt={carDetails.name}
             className="w-full h-40 object-cover"
           />

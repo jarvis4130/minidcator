@@ -6,7 +6,9 @@ const Header = () => {
   return (
     <header className="bg-blue-500 text-white py-4 px-20 flex flex-row justify-between">
       <div className="container mx-auto">
-        <div className="w-20">
+        <div className="w-20" onClick={() => {
+            navigate("/");
+          }}>
           <img src="/images/m-indicator.jpg" alt="this is an image" />
         </div>
         {/* <h1
