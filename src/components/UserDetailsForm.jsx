@@ -1,7 +1,9 @@
 // UserDetailsForm.js
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const UserDetailsForm = () => {
+  const navigate =useNavigate()
   // State to store user details
   const [formData, setFormData] = useState({
     name: "",
@@ -21,9 +23,8 @@ const UserDetailsForm = () => {
       name: "",
       email: "",
       password: "",
-    });
-
-    console.log("User data stored in local storage:", formData);
+    })
+    navigate("/");
   };
 
   // Handle input changes
@@ -88,6 +89,7 @@ const UserDetailsForm = () => {
           />
         </div>
         <button
+        onClick={handleSubmit}
           type="submit"
           className="bg-blue-500 text-white px-4 py-2 rounded-md"
         >
