@@ -32,30 +32,6 @@ const CabList = () => {
 
   const cars = [
     {
-      id: 1,
-      name: "Toyota Camry",
-      image: "./images/toyota-camry.jpg",
-      description: "Comfortable sedan with ample legroom.",
-    },
-    {
-      id: 2,
-      name: "Honda Civic",
-      image: "./images/honda-civic.jpg",
-      description: "Sporty sedan with great fuel efficiency.",
-    },
-    {
-      id: 3,
-      name: "Ford Mustang",
-      image: "./images/ford-mustang.jpg",
-      description: "Iconic American muscle car.",
-    },
-    {
-      id: 4,
-      name: "Tesla Model S",
-      image: "./images/tesla-model.jpg",
-      description: "Electric luxury sedan with cutting-edge technology.",
-    },
-    {
       id: 5,
       name: "Rickshaw",
       image: "./images/rickshaw.jpg",

@@ -9,60 +9,32 @@ const Checkout = () => {
   // Mock car details
   const cars = [
     {
-      id: 1,
-      name: "Toyota Camry",
-      image: "/images/toyota-camry.jpg",
-      description: "Comfortable sedan with ample legroom.",
-      price: 2500, // Adding price for demonstration
-    },
-    {
-      id: 2,
-      name: "Honda Civic",
-      image: "/images/honda-civic.jpg",
-      description: "Sporty sedan with great fuel efficiency.",
-      price: 2200, // Adding price for demonstration
-    },
-    {
-      id: 3,
-      name: "Ford Mustang",
-      image: "/images/ford-mustang.jpg",
-      description: "Iconic American muscle car.",
-      price: 4000,
-    },
-    {
-      id: 4,
-      name: "Tesla Model S",
-      image: "/images/tesla-model.jpg",
-      description: "Electric luxury sedan with cutting-edge technology.",
-      price: 8000,
-    },
-    {
       id: 5,
       name: "Rickshaw",
       image: "/images/rickshaw.jpg",
       description: "Fast and Cheap Rickshaw.",
-      price: 500,
+      price: 25,
     },
     {
       id: 6,
       name: "Bus",
       image: "/images/bus.jpg",
       description: "Great for environment",
-      price: 25,
+      price: 5,
     },
     {
       id: 7,
       name: "Local Train",
       image: "/images/local-train.jpg",
       description: "Fast and Easy way of Transportation.",
-      price: 20,
+      price: 4,
     },
     {
       id: 8,
       name: "Metro",
       image: "/images/metro.jpg",
       description: "Full on AC and Beat the traffic.",
-      price: 50,
+      price: 20,
     },
   ];
 
@@ -90,7 +62,7 @@ const Checkout = () => {
         </div>
         <h2 className="text-lg font-semibold mb-2">{carDetails.name}</h2>
         <p className="text-sm mb-2">{carDetails.description}</p>
-        <p className="text-sm mb-2">Price: ${carDetails.price}</p>
+        <p className="text-sm mb-2">Price: Rs {carDetails.price}+ {Math.ceil(carDetails.price/10)} per km</p>
         <p className="text-sm mb-2">ID: {carDetails.id}</p>
         {/* Add checkout form and process here */}
         <button
