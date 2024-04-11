@@ -24,7 +24,7 @@ const UserDetailsForm = () => {
       email: "",
       password: "",
     })
-    navigate("/");
+    navigate("/cab");
   };
 
   // Handle input changes

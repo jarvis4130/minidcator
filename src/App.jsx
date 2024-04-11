@@ -15,10 +15,10 @@ const App = () => {
         <Header />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<CabList />} />
+            <Route path="/cab" element={<CabList />} />
             <Route path="/cab/:id" element={<CabDetails />} />
             <Route path="/checkout/:id" element={<Checkout />} />
-            <Route path="/user-details" index={true} element={<UserDetailsForm />} /> 
+            <Route path="/" index={true} element={<UserDetailsForm />} /> 
           </Routes>
         </main>
         <Footer />
