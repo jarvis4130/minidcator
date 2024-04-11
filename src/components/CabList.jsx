@@ -47,7 +47,7 @@ const CabList = () => {
       id: 7,
       name: "Local Train",
       image: "./images/local-train.jpg",
-      description: "Fast and Easy way of Transportation.",
+      description: "Fast and Easy way of Transportation."
     },
     {
       id: 8,
@@ -62,7 +62,7 @@ const CabList = () => {
       {cars.map((car) => (
         <div
           key={car.id}
-          className="m-4 bg-white rounded-md shadow-md overflow-hidden w-64"
+          className="m-4 bg-white rounded-md shadow-md overflow-hidden w-64 bg-yellow-300 p-4"
         >
           <img
             src={car.image}
