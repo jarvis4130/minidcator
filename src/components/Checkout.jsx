@@ -60,10 +60,10 @@ const Checkout = () => {
   }
 
   return (
-    <div className="max-w-lg mx-auto">
+    <div className="max-w-lg mx-auto px-2">
       <h1 className="text-2xl font-semibold mb-4 flex justify-center mt-5">Checkout</h1>
       <div className="bg-blue-300 rounded-md shadow-md p-4">
-        <div className="m-4 bg-white rounded-md shadow-md overflow-hidden w-64">
+        <div className="m-4 bg-white rounded-md shadow-md overflow-hidden w-50">
           <img
             src={carDetails.image}
             alt={carDetails.name}
